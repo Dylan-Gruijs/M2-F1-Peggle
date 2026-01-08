@@ -4,16 +4,16 @@ public class CountBalls : MonoBehaviour
 {
     public static event Action onBallLost;          //event als je een bal verliest
     public static event Action onBallsDepleted;     //event als ballen op zijn
-    [SerializeField] private int ballsLeft = 5;       //Aantal ballen over, aanpasbaar in inspector
+    [SerializeField] private int ballsLeft = 4;       //Aantal ballen over, aanpasbaar in inspector
     private void Start()
     {
         //Luister naar het onShootBall event
-       // Shoot.onShootBall += CountOnShot;
+        Shoot.onShootBall += CountOnShot;
     }
     private void OnDisable()
     {
         //verwijder ook weer alle events
-        //Shoot.onShootBall -= CountOnShot;
+        Shoot.onShootBall -= CountOnShot;
     }
     private void CountOnShot()
     {
