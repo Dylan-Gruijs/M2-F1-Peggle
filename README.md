@@ -1,4 +1,5 @@
-# M2-F1-
+# M2-F1-Peggle
+Dit is mijn game het is een Peggle clone geïnspireerd door Formule 1 
 les 1.1
 [m2 game voorbeeld.pdf](https://github.com/user-attachments/files/23712785/m2.game.voorbeeld.pdf)
 mijn schets voor de game
